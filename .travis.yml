@@ -1,5 +1,5 @@
 em target: erlang
-script: "sudo apt-get --force-yes install unixodbc-dev libncurses-dev libssl-dev libxml2-dev libexpat1-dev && make"
+script: "sudo apt-get -y --force-yes install unixodbc-dev libncurses-dev libssl-dev libxml2-dev libexpat1-dev && make"
 notifications:
   disabled: true
 env:
