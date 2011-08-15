@@ -2,7 +2,7 @@ target: erlang
 script: "sudo apt-get -y --force-yes install unixodbc-dev libncurses-dev libssl-dev libxml2-dev libexpat1-dev && make"
 notifications:
   disabled: true
-env:
-  - ERL_LIBS=/usr/local/erlang/R14B03 PATH=$PATH:/usr/local/erlang/R14B03/bin
-  - ERL_LIBS=/usr/local/erlang/R13B04 PATH=$PATH:/usr/local/erlang/R13B04/bin
-  - ERL_LIBS=/usr/local/erlang/R12B-5 PATH=$PATH:/usr/local/erlang/R12B-5/bin
+otp_release:
+  - R14B03
+  - R14B02
+  - R14B01
